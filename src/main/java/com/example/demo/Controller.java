@@ -10,7 +10,7 @@ public class Controller {
     @PostMapping("/increment")
     public Payload incrementData(@RequestBody Payload payload) {
 
-        // Update the string value to be the concatenation of itself
+        // Update the string value to be the concatenation of  itself
         payload.setStringValue(payload.getStringValue() + " " + payload.getStringValue());
 
         // Increment the int value by itself
