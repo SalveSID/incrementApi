@@ -1,0 +1,7 @@
+services:
+  - name: your-spring-boot-app
+    type: web
+    envVars:
+      - key: SPRING_PROFILES_ACTIVE
+        value: production
+    startCommand: java -jar inc.war
